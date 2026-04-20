@@ -54,6 +54,8 @@ The histogram of gate values shows how weights are distributed.
 
 ### λ = 1e-4
 ![Lambda 1e-4](gates_lambda_0.0001.png)
+
+
 As λ increases, the distribution shows a slight shift toward zero, indicating increasing sparsity, although the effect remains limited in this setup.
 
 
