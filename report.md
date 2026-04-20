@@ -4,12 +4,9 @@
 
 The sparsity loss is defined as the sum of all gate values:
 
-[
-\text{SparsityLoss} = \sum_i \text{gate}_i
-]
+SparsityLoss = Σ gate_i
 
-Since gates are obtained using the sigmoid function, they lie between 0 and 1.
-Applying an L1 penalty (sum of gates) encourages these values to move toward zero.
+Since gates lie between 0 and 1, minimizing this term encourages many of them to move toward zero, effectively pruning the corresponding weights.
 
 Unlike L2 regularization, which only reduces values, L1 provides a constant gradient that pushes gate values to exactly zero. When a gate approaches zero, its corresponding weight is effectively removed, resulting in a sparse network.
 
