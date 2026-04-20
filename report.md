@@ -44,6 +44,19 @@ The histogram of gate values shows how weights are distributed.
 * Values close to 0 correspond to pruned weights.
 * Values away from 0 correspond to active weights.
 
+* ## Gate Distribution Plots
+
+### λ = 1e-6
+![Lambda 1e-6](gates_lambda_1e-06.png)
+
+### λ = 1e-5
+![Lambda 1e-5](gates_lambda_1e-05.png)
+
+### λ = 1e-4
+![Lambda 1e-4](gates_lambda_0.0001.png)
+As λ increases, the distribution shows a slight shift toward zero, indicating increasing sparsity, although the effect remains limited in this setup.
+
+
 In this experiment, most gate values are away from zero, indicating limited pruning.
 
 ---
